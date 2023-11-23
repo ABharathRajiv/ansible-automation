@@ -1,0 +1,37 @@
+---
+- hosts: haproxy
+  collections:
+    - community.general
+  become: yes
+  become_user: root
+  gather_facts: true
+  vars_files:
+    - "environment/hap_tuning_variables.yml"
+    - "vault.yml"
+
+  tasks:
+
+    - name: Copy HAProxy configuration file
+      template:
+        src: templates/haproxy.cfg.j2
+        dest: /etc/haproxy/haproxy.cfg
+      register: result
+
+    # - name: Copy custom error pages
+    #   copy:
+    #     src: errors/
+    #     dest: /etc/haproxy/
+    #   notify: Restart HAProxy
+    #   register: result
+
+    - name: Add newline to the end of the file
+      lineinfile:
+        path: /etc/haproxy/haproxy.cfg
+        line: ""
+    
+    - name: Log errors
+      lineinfile:
+        path: log/error.log
+        line: "{{ result }}"
+      when: result.failed
+

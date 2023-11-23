@@ -1,0 +1,54 @@
+---
+- name: Synchronous Relod of Haproxy
+  hosts: haproxy
+  become: yes
+  become_user: root
+  vars:
+    time: "{{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+  vars_files:
+    - "environment/hap_tuning_variables.yml"
+    - "vault.yml"
+  tasks:
+    - name: Initial check
+      shell: 
+         "hostname"
+      register: hostname
+
+    - name: Display Current Time (Before Relod)
+      debug:
+        msg: "Current Time (Before Relod): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+    - name: Relod HAProxy
+      become: true
+      systemd:
+        name: haproxy
+        state: reloaded
+      async: 100
+      poll: 0
+      register: relod_result
+    
+    # - name: Delay before starting HAProxy
+    #   wait_for:
+    #     timeout: 5
+
+    - name: Display Current Time (After Relod)
+      debug:
+        msg: "Current Time (After Relod): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+
+    # - name: Ensure log directory exists
+    #   file:
+    #     path: log
+    #     state: directory
+
+    # - name: Ensure error.log file exists
+    #   file:
+    #     path: log/error.log
+    #     state: touch
+
+    # - name: Log errors for Relod process
+    #   lineinfile:
+    #     path: log/error.log
+    #     line: "{{ relod_result }}"
+    #   when: relod_result.failed
+  

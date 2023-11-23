@@ -1,0 +1,1036 @@
+2023-11-23 01:23:08,437 p=113423 u=bharathrajiva n=ansible | PLAY [haproxy] *****************************************************************
+2023-11-23 01:23:08,473 p=113423 u=bharathrajiva n=ansible | TASK [Gathering Facts] *********************************************************
+2023-11-23 01:23:18,132 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:23:18,721 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:23:18,913 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:23:19,879 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:23:21,190 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:23:21,329 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:23:21,604 p=113423 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] *****************************************
+2023-11-23 01:23:25,709 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:23:28,072 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:23:28,142 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:23:28,321 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:23:28,492 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:23:30,335 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:23:30,380 p=113423 u=bharathrajiva n=ansible | TASK [Add newline to the end of the file] **************************************
+2023-11-23 01:23:32,596 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:23:34,114 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:23:34,439 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:23:34,505 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:23:34,847 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:23:35,349 p=113423 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:23:35,391 p=113423 u=bharathrajiva n=ansible | TASK [Log errors] **************************************************************
+2023-11-23 01:23:35,430 p=113423 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 01:23:35,469 p=113423 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 01:23:35,498 p=113423 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 01:23:35,530 p=113423 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 01:23:35,558 p=113423 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 01:23:35,570 p=113423 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 01:23:36,051 p=113423 u=bharathrajiva n=ansible | PLAY RECAP *********************************************************************
+2023-11-23 01:23:36,051 p=113423 u=bharathrajiva n=ansible | haProxy-1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:23:36,051 p=113423 u=bharathrajiva n=ansible | haProxy-2                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:23:36,052 p=113423 u=bharathrajiva n=ansible | haProxy-3                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:23:36,052 p=113423 u=bharathrajiva n=ansible | haProxy-4                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:23:36,052 p=113423 u=bharathrajiva n=ansible | haProxy-5                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:23:36,052 p=113423 u=bharathrajiva n=ansible | haProxy-6                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:23:46,457 p=114171 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 01:23:46,482 p=114171 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 01:23:51,341 p=114171 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:23:51,764 p=114171 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:23:51,930 p=114171 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:23:51,934 p=114171 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:23:51,974 p=114171 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:23:52,964 p=114171 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:23:53,248 p=114171 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] **********************************************************************************************************************
+2023-11-23 01:23:58,173 p=114171 u=bharathrajiva n=ansible | ERROR! The requested handler 'Restart HAProxy' was not found in either the main handlers list nor in the listening handlers list
+2023-11-23 01:24:07,308 p=114717 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 01:24:07,331 p=114717 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 01:24:11,639 p=114717 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:24:11,640 p=114717 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:24:11,754 p=114717 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:24:12,019 p=114717 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:24:12,084 p=114717 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:24:13,436 p=114717 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:24:13,780 p=114717 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] **********************************************************************************************************************
+2023-11-23 01:24:18,358 p=114717 u=bharathrajiva n=ansible | ERROR! The requested handler 'Restart HAProxy' was not found in either the main handlers list nor in the listening handlers list
+2023-11-23 01:24:53,009 p=115252 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 01:24:53,031 p=115252 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 01:24:55,808 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:24:56,434 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:24:56,541 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:24:56,640 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:24:56,937 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:24:58,051 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:24:58,264 p=115252 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] **********************************************************************************************************************
+2023-11-23 01:25:01,244 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:25:01,582 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:25:02,208 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:25:02,331 p=115252 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:25:03,216 p=115252 u=bharathrajiva n=ansible | ERROR! The requested handler 'Restart HAProxy' was not found in either the main handlers list nor in the listening handlers list
+2023-11-23 01:25:08,105 p=115736 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 01:25:08,122 p=115736 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 01:25:10,802 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:25:10,971 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:25:11,092 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:25:11,219 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:25:11,707 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:25:12,152 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:25:12,329 p=115736 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] **********************************************************************************************************************
+2023-11-23 01:25:14,765 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:25:15,020 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:25:15,229 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:25:15,240 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:25:15,704 p=115736 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:25:17,487 p=115736 u=bharathrajiva n=ansible | ERROR! The requested handler 'Restart HAProxy' was not found in either the main handlers list nor in the listening handlers list
+2023-11-23 01:25:22,291 p=116187 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 01:25:22,310 p=116187 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 01:25:26,610 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:25:26,957 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:25:26,980 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:25:27,016 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:25:27,384 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:25:27,594 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:25:27,780 p=116187 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] **********************************************************************************************************************
+2023-11-23 01:25:31,198 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:25:32,549 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:25:32,726 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:25:32,813 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:25:32,867 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:25:33,586 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:25:33,608 p=116187 u=bharathrajiva n=ansible | TASK [Add newline to the end of the file] *******************************************************************************************************************
+2023-11-23 01:25:35,201 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:25:35,404 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:25:35,490 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:25:35,564 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:25:35,612 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:25:36,519 p=116187 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:25:36,539 p=116187 u=bharathrajiva n=ansible | TASK [Log errors] *******************************************************************************************************************************************
+2023-11-23 01:25:36,572 p=116187 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 01:25:36,601 p=116187 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 01:25:36,626 p=116187 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 01:25:36,652 p=116187 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 01:25:36,675 p=116187 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 01:25:36,688 p=116187 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 01:25:37,038 p=116187 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 01:25:37,038 p=116187 u=bharathrajiva n=ansible | haProxy-1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:25:37,038 p=116187 u=bharathrajiva n=ansible | haProxy-2                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:25:37,038 p=116187 u=bharathrajiva n=ansible | haProxy-3                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:25:37,038 p=116187 u=bharathrajiva n=ansible | haProxy-4                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:25:37,039 p=116187 u=bharathrajiva n=ansible | haProxy-5                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:25:37,039 p=116187 u=bharathrajiva n=ansible | haProxy-6                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:31:14,449 p=117535 u=bharathrajiva n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/bharathrajiva/workspace/ansible-automation/environment/hap_tuning_variables.yml': line 102, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    rise: 1
+    - name: mqtt-6
+    ^ here
+
+2023-11-23 01:31:37,599 p=117651 u=bharathrajiva n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/bharathrajiva/workspace/ansible-automation/environment/hap_tuning_variables.yml': line 132, column 13, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    rise: 1
+      - name: mqtt-11
+            ^ here
+
+2023-11-23 01:31:51,244 p=117705 u=bharathrajiva n=ansible | [WARNING]: While constructing a mapping from
+/home/bharathrajiva/workspace/ansible-
+automation/environment/hap_tuning_variables.yml, line 318, column 5, found a
+duplicate dict key (name). Using last defined value only.
+
+2023-11-23 01:31:51,245 p=117705 u=bharathrajiva n=ansible | [WARNING]: While constructing a mapping from
+/home/bharathrajiva/workspace/ansible-
+automation/environment/hap_tuning_variables.yml, line 318, column 5, found a
+duplicate dict key (address). Using last defined value only.
+
+2023-11-23 01:31:51,245 p=117705 u=bharathrajiva n=ansible | [WARNING]: While constructing a mapping from
+/home/bharathrajiva/workspace/ansible-
+automation/environment/hap_tuning_variables.yml, line 318, column 5, found a
+duplicate dict key (port). Using last defined value only.
+
+2023-11-23 01:31:51,245 p=117705 u=bharathrajiva n=ansible | [WARNING]: While constructing a mapping from
+/home/bharathrajiva/workspace/ansible-
+automation/environment/hap_tuning_variables.yml, line 318, column 5, found a
+duplicate dict key (interval). Using last defined value only.
+
+2023-11-23 01:31:51,245 p=117705 u=bharathrajiva n=ansible | [WARNING]: While constructing a mapping from
+/home/bharathrajiva/workspace/ansible-
+automation/environment/hap_tuning_variables.yml, line 318, column 5, found a
+duplicate dict key (fall). Using last defined value only.
+
+2023-11-23 01:31:51,246 p=117705 u=bharathrajiva n=ansible | [WARNING]: While constructing a mapping from
+/home/bharathrajiva/workspace/ansible-
+automation/environment/hap_tuning_variables.yml, line 318, column 5, found a
+duplicate dict key (rise). Using last defined value only.
+
+2023-11-23 01:31:51,298 p=117705 u=bharathrajiva n=ansible | PLAY [haproxy] *****************************************************************
+2023-11-23 01:31:51,327 p=117705 u=bharathrajiva n=ansible | TASK [Gathering Facts] *********************************************************
+2023-11-23 01:31:55,773 p=117705 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:31:56,498 p=117705 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:31:56,635 p=117705 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:31:56,653 p=117705 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:31:56,723 p=117705 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:31:56,797 p=117705 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:31:57,031 p=117705 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] *****************************************
+2023-11-23 01:32:00,021 p=117705 u=bharathrajiva n=ansible | ERROR! The requested handler 'Restart HAProxy' was not found in either the main handlers list nor in the listening handlers list
+2023-11-23 01:33:51,662 p=118436 u=bharathrajiva n=ansible | PLAY [haproxy] *****************************************************************
+2023-11-23 01:33:51,683 p=118436 u=bharathrajiva n=ansible | TASK [Gathering Facts] *********************************************************
+2023-11-23 01:33:55,271 p=118436 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:33:55,485 p=118436 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:33:55,707 p=118436 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:33:55,741 p=118436 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:33:55,772 p=118436 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:33:56,644 p=118436 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:33:56,857 p=118436 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] *****************************************
+2023-11-23 01:34:00,115 p=118436 u=bharathrajiva n=ansible | ERROR! The requested handler 'Restart HAProxy' was not found in either the main handlers list nor in the listening handlers list
+2023-11-23 01:34:19,631 p=119040 u=bharathrajiva n=ansible | PLAY [haproxy] *****************************************************************
+2023-11-23 01:34:19,656 p=119040 u=bharathrajiva n=ansible | TASK [Gathering Facts] *********************************************************
+2023-11-23 01:34:22,072 p=119040 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:34:22,126 p=119040 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:34:22,684 p=119040 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:34:22,729 p=119040 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:34:22,932 p=119040 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:34:23,422 p=119040 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:34:23,633 p=119040 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] *****************************************
+2023-11-23 01:34:26,991 p=119040 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:34:27,186 p=119040 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:34:27,419 p=119040 u=bharathrajiva n=ansible | ERROR! The requested handler 'Restart HAProxy' was not found in either the main handlers list nor in the listening handlers list
+2023-11-23 01:34:43,735 p=119476 u=bharathrajiva n=ansible | PLAY [haproxy] *****************************************************************
+2023-11-23 01:34:43,758 p=119476 u=bharathrajiva n=ansible | TASK [Gathering Facts] *********************************************************
+2023-11-23 01:34:46,570 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:34:46,573 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:34:46,652 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:34:47,239 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:34:47,336 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:34:49,091 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:34:49,312 p=119476 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] *****************************************
+2023-11-23 01:34:52,077 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:34:52,085 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:34:52,086 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:34:52,988 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:34:52,991 p=119476 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:34:55,898 p=119476 u=bharathrajiva n=ansible | ERROR! The requested handler 'Restart HAProxy' was not found in either the main handlers list nor in the listening handlers list
+2023-11-23 01:35:03,332 p=119986 u=bharathrajiva n=ansible | PLAY [haproxy] *****************************************************************
+2023-11-23 01:35:03,353 p=119986 u=bharathrajiva n=ansible | TASK [Gathering Facts] *********************************************************
+2023-11-23 01:35:07,531 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:35:07,611 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:35:07,615 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:35:07,747 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:35:07,749 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:35:09,845 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:35:10,121 p=119986 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] *****************************************
+2023-11-23 01:35:14,454 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:35:14,455 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:35:14,754 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:35:17,400 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:35:17,686 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:35:19,087 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:35:19,125 p=119986 u=bharathrajiva n=ansible | TASK [Add newline to the end of the file] **************************************
+2023-11-23 01:35:20,561 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 01:35:20,610 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 01:35:20,637 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 01:35:20,925 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 01:35:21,199 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 01:35:22,089 p=119986 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 01:35:22,108 p=119986 u=bharathrajiva n=ansible | TASK [Log errors] **************************************************************
+2023-11-23 01:35:22,137 p=119986 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 01:35:22,166 p=119986 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 01:35:22,220 p=119986 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 01:35:22,247 p=119986 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 01:35:22,277 p=119986 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 01:35:22,288 p=119986 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 01:35:22,697 p=119986 u=bharathrajiva n=ansible | PLAY RECAP *********************************************************************
+2023-11-23 01:35:22,698 p=119986 u=bharathrajiva n=ansible | haProxy-1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:35:22,698 p=119986 u=bharathrajiva n=ansible | haProxy-2                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:35:22,698 p=119986 u=bharathrajiva n=ansible | haProxy-3                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:35:22,698 p=119986 u=bharathrajiva n=ansible | haProxy-4                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:35:22,698 p=119986 u=bharathrajiva n=ansible | haProxy-5                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 01:35:22,698 p=119986 u=bharathrajiva n=ansible | haProxy-6                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:02:16,038 p=135196 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 13:02:16,061 p=135196 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:02:20,520 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:02:20,666 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:02:20,890 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:02:20,934 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:02:21,288 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:02:21,591 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:02:21,797 p=135196 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] **********************************************************************************************************************
+2023-11-23 13:02:24,719 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:02:24,961 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:02:25,281 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:02:25,569 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:02:25,578 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:02:25,699 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:02:25,719 p=135196 u=bharathrajiva n=ansible | TASK [Add newline to the end of the file] *******************************************************************************************************************
+2023-11-23 13:02:27,357 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:02:27,377 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:02:27,407 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:02:27,521 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:02:27,965 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:02:28,044 p=135196 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:02:28,080 p=135196 u=bharathrajiva n=ansible | TASK [Log errors] *******************************************************************************************************************************************
+2023-11-23 13:02:28,127 p=135196 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 13:02:28,154 p=135196 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 13:02:28,187 p=135196 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 13:02:28,218 p=135196 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 13:02:28,246 p=135196 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 13:02:28,259 p=135196 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 13:02:28,681 p=135196 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:02:28,681 p=135196 u=bharathrajiva n=ansible | haProxy-1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:02:28,681 p=135196 u=bharathrajiva n=ansible | haProxy-2                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:02:28,681 p=135196 u=bharathrajiva n=ansible | haProxy-3                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:02:28,681 p=135196 u=bharathrajiva n=ansible | haProxy-4                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:02:28,681 p=135196 u=bharathrajiva n=ansible | haProxy-5                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:02:28,681 p=135196 u=bharathrajiva n=ansible | haProxy-6                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:18:45,244 p=138582 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 13:18:45,272 p=138582 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:18:49,693 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:18:50,341 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:18:50,422 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:18:50,509 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:18:51,140 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:18:51,573 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:18:52,233 p=138582 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] **********************************************************************************************************************
+2023-11-23 13:18:55,179 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:18:55,531 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:18:55,720 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:18:55,776 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:18:55,893 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:18:56,605 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:18:56,645 p=138582 u=bharathrajiva n=ansible | TASK [Add newline to the end of the file] *******************************************************************************************************************
+2023-11-23 13:18:58,915 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:18:58,916 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:18:59,030 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:18:59,086 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:18:59,129 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:18:59,776 p=138582 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:18:59,819 p=138582 u=bharathrajiva n=ansible | TASK [Log errors] *******************************************************************************************************************************************
+2023-11-23 13:18:59,864 p=138582 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 13:18:59,902 p=138582 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 13:18:59,991 p=138582 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 13:19:00,041 p=138582 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 13:19:00,106 p=138582 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 13:19:00,124 p=138582 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 13:19:00,759 p=138582 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:19:00,759 p=138582 u=bharathrajiva n=ansible | haProxy-1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:19:00,759 p=138582 u=bharathrajiva n=ansible | haProxy-2                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:19:00,759 p=138582 u=bharathrajiva n=ansible | haProxy-3                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:19:00,760 p=138582 u=bharathrajiva n=ansible | haProxy-4                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:19:00,760 p=138582 u=bharathrajiva n=ansible | haProxy-5                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:19:00,760 p=138582 u=bharathrajiva n=ansible | haProxy-6                  : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:20:03,427 p=139520 u=bharathrajiva n=ansible | PLAY [Synchronous Relod of Haproxy] *************************************************************************************************************************
+2023-11-23 13:20:03,477 p=139520 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:20:08,110 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:20:08,172 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:20:08,596 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:20:08,906 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:20:10,100 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:20:10,300 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:20:11,053 p=139520 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:20:12,552 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:20:12,591 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:20:12,952 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:20:12,952 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:20:13,265 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:20:13,278 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:20:13,327 p=139520 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Relod)] ******************************************************************************************************************
+2023-11-23 13:20:13,382 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:26:12'
+2023-11-23 13:20:13,422 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:26:10'
+2023-11-23 13:20:13,495 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:26:10'
+2023-11-23 13:20:13,577 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:26:10'
+2023-11-23 13:20:13,693 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:26:10'
+2023-11-23 13:20:13,731 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:26:12'
+2023-11-23 13:20:13,798 p=139520 u=bharathrajiva n=ansible | TASK [Relod HAProxy] ****************************************************************************************************************************************
+2023-11-23 13:20:17,159 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:20:17,290 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:20:17,409 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:20:17,499 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:20:17,700 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:20:18,138 p=139520 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:20:18,181 p=139520 u=bharathrajiva n=ansible | TASK [Display Current Time (After Relod)] *******************************************************************************************************************
+2023-11-23 13:20:18,229 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:26:12'
+2023-11-23 13:20:18,319 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:26:10'
+2023-11-23 13:20:18,399 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:26:10'
+2023-11-23 13:20:18,479 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:26:10'
+2023-11-23 13:20:18,555 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:26:10'
+2023-11-23 13:20:18,597 p=139520 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:26:12'
+2023-11-23 13:20:19,283 p=139520 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:20:19,284 p=139520 u=bharathrajiva n=ansible | haProxy-1                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:20:19,284 p=139520 u=bharathrajiva n=ansible | haProxy-2                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:20:19,284 p=139520 u=bharathrajiva n=ansible | haProxy-3                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:20:19,284 p=139520 u=bharathrajiva n=ansible | haProxy-4                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:20:19,284 p=139520 u=bharathrajiva n=ansible | haProxy-5                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:20:19,285 p=139520 u=bharathrajiva n=ansible | haProxy-6                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:21:31,736 p=140332 u=bharathrajiva n=ansible | ERROR! Decryption failed (no vault secrets were found that could decrypt) on /home/bharathrajiva/workspace/ansible-automation/vault.yml
+2023-11-23 13:21:36,357 p=140382 u=bharathrajiva n=ansible | PLAY [Synchronous Relod of Haproxy] *************************************************************************************************************************
+2023-11-23 13:21:36,413 p=140382 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:21:42,252 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:21:42,539 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:21:42,620 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:21:43,928 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:21:44,150 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:21:44,185 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:21:44,533 p=140382 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:21:46,120 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:21:46,172 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:21:46,250 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:21:46,384 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:21:46,394 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:21:47,304 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:21:47,336 p=140382 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Relod)] ******************************************************************************************************************
+2023-11-23 13:21:47,380 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:27:38'
+2023-11-23 13:21:47,451 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:27:37'
+2023-11-23 13:21:47,555 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:27:37'
+2023-11-23 13:21:47,611 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:27:38'
+2023-11-23 13:21:47,669 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:27:37'
+2023-11-23 13:21:47,693 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:27:38'
+2023-11-23 13:21:47,740 p=140382 u=bharathrajiva n=ansible | TASK [Relod HAProxy] ****************************************************************************************************************************************
+2023-11-23 13:21:50,533 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:21:50,572 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:21:50,607 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:21:50,835 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:21:51,155 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:21:51,297 p=140382 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:21:51,341 p=140382 u=bharathrajiva n=ansible | TASK [Display Current Time (After Relod)] *******************************************************************************************************************
+2023-11-23 13:21:51,384 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:27:38'
+2023-11-23 13:21:51,423 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:27:37'
+2023-11-23 13:21:51,463 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:27:37'
+2023-11-23 13:21:51,517 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:27:38'
+2023-11-23 13:21:51,596 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:27:37'
+2023-11-23 13:21:51,628 p=140382 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:27:38'
+2023-11-23 13:21:52,271 p=140382 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:21:52,272 p=140382 u=bharathrajiva n=ansible | haProxy-1                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:21:52,272 p=140382 u=bharathrajiva n=ansible | haProxy-2                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:21:52,272 p=140382 u=bharathrajiva n=ansible | haProxy-3                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:21:52,272 p=140382 u=bharathrajiva n=ansible | haProxy-4                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:21:52,272 p=140382 u=bharathrajiva n=ansible | haProxy-5                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:21:52,272 p=140382 u=bharathrajiva n=ansible | haProxy-6                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:24:21,938 p=141444 u=bharathrajiva n=ansible | PLAY [Synchronous Relod of Haproxy] *************************************************************************************************************************
+2023-11-23 13:24:21,991 p=141444 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:24:26,978 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:24:27,018 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:24:27,302 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:24:27,470 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:24:27,675 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:24:28,296 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:24:28,588 p=141444 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:24:30,530 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:24:30,723 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:24:30,770 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:24:30,782 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:24:30,857 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:24:30,911 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:24:30,957 p=141444 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Relod)] ******************************************************************************************************************
+2023-11-23 13:24:31,010 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:30:09'
+2023-11-23 13:24:31,097 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:30:09'
+2023-11-23 13:24:31,155 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:30:09'
+2023-11-23 13:24:31,242 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:30:10'
+2023-11-23 13:24:31,327 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:30:08'
+2023-11-23 13:24:31,365 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:30:09'
+2023-11-23 13:24:31,423 p=141444 u=bharathrajiva n=ansible | TASK [Relod HAProxy] ****************************************************************************************************************************************
+2023-11-23 13:24:34,626 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:24:35,431 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:24:35,552 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:24:35,553 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:24:35,982 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:24:36,326 p=141444 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:24:36,364 p=141444 u=bharathrajiva n=ansible | TASK [Display Current Time (After Relod)] *******************************************************************************************************************
+2023-11-23 13:24:36,406 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:30:09'
+2023-11-23 13:24:36,536 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:30:09'
+2023-11-23 13:24:36,593 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:30:09'
+2023-11-23 13:24:36,640 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:30:10'
+2023-11-23 13:24:36,678 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:30:08'
+2023-11-23 13:24:36,700 p=141444 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:30:09'
+2023-11-23 13:24:37,437 p=141444 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:24:37,438 p=141444 u=bharathrajiva n=ansible | haProxy-1                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:24:37,438 p=141444 u=bharathrajiva n=ansible | haProxy-2                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:24:37,438 p=141444 u=bharathrajiva n=ansible | haProxy-3                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:24:37,438 p=141444 u=bharathrajiva n=ansible | haProxy-4                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:24:37,438 p=141444 u=bharathrajiva n=ansible | haProxy-5                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:24:37,438 p=141444 u=bharathrajiva n=ansible | haProxy-6                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:24:58,970 p=142059 u=bharathrajiva n=ansible | PLAY [Synchronous Start of Haproxy] *************************************************************************************************************************
+2023-11-23 13:24:59,021 p=142059 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:25:02,348 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:25:02,635 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:25:02,798 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:25:02,836 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:25:03,314 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:25:03,645 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:25:03,980 p=142059 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:25:05,412 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:25:05,414 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:25:05,584 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:25:05,620 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:25:05,716 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:25:06,394 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:25:06,430 p=142059 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Start)] ******************************************************************************************************************
+2023-11-23 13:25:06,472 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:30:42'
+2023-11-23 13:25:06,512 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:30:42'
+2023-11-23 13:25:06,559 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:30:43'
+2023-11-23 13:25:06,616 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:30:42'
+2023-11-23 13:25:06,669 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:30:42'
+2023-11-23 13:25:06,696 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:30:41'
+2023-11-23 13:25:06,749 p=142059 u=bharathrajiva n=ansible | TASK [Start HAProxy] ****************************************************************************************************************************************
+2023-11-23 13:25:09,290 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:25:09,339 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:25:09,350 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:25:09,351 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:25:09,772 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:25:10,647 p=142059 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:25:10,700 p=142059 u=bharathrajiva n=ansible | TASK [Wait for HAProxy to Start] ****************************************************************************************************************************
+2023-11-23 13:25:12,657 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:25:12,696 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:25:12,703 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:25:12,708 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:25:12,733 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:25:12,760 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:25:12,829 p=142059 u=bharathrajiva n=ansible | TASK [Display Current Time (After Start)] *******************************************************************************************************************
+2023-11-23 13:25:12,903 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:30:42'
+2023-11-23 13:25:12,963 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:30:42'
+2023-11-23 13:25:13,034 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:30:43'
+2023-11-23 13:25:13,078 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:30:42'
+2023-11-23 13:25:13,133 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:30:42'
+2023-11-23 13:25:13,156 p=142059 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:30:41'
+2023-11-23 13:25:13,967 p=142059 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:25:13,968 p=142059 u=bharathrajiva n=ansible | haProxy-1                  : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:13,968 p=142059 u=bharathrajiva n=ansible | haProxy-2                  : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:13,968 p=142059 u=bharathrajiva n=ansible | haProxy-3                  : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:13,968 p=142059 u=bharathrajiva n=ansible | haProxy-4                  : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:13,968 p=142059 u=bharathrajiva n=ansible | haProxy-5                  : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:13,968 p=142059 u=bharathrajiva n=ansible | haProxy-6                  : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:28,550 p=142762 u=bharathrajiva n=ansible | PLAY [Synchronous Stop of Haproxy] **************************************************************************************************************************
+2023-11-23 13:25:28,604 p=142762 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:25:32,396 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:25:33,089 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:25:33,449 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:25:33,461 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:25:33,745 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:25:33,927 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:25:34,494 p=142762 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:25:36,336 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:25:36,623 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:25:37,002 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:25:37,103 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:25:37,103 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:25:37,189 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:25:37,222 p=142762 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Stop)] *******************************************************************************************************************
+2023-11-23 13:25:37,272 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:37,312 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:37,359 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:37,398 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:31:09'
+2023-11-23 13:25:37,437 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:37,454 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:37,485 p=142762 u=bharathrajiva n=ansible | TASK [Stop HAProxy] *****************************************************************************************************************************************
+2023-11-23 13:25:40,080 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:25:40,642 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:25:41,010 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:25:41,059 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:25:41,193 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:25:41,543 p=142762 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:25:41,588 p=142762 u=bharathrajiva n=ansible | TASK [Display Current Time (After Stop)] ********************************************************************************************************************
+2023-11-23 13:25:41,632 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:41,690 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:41,815 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:41,903 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:31:09'
+2023-11-23 13:25:41,992 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:42,025 p=142762 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:31:10'
+2023-11-23 13:25:42,938 p=142762 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:25:42,938 p=142762 u=bharathrajiva n=ansible | haProxy-1                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:42,939 p=142762 u=bharathrajiva n=ansible | haProxy-2                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:42,939 p=142762 u=bharathrajiva n=ansible | haProxy-3                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:42,939 p=142762 u=bharathrajiva n=ansible | haProxy-4                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:42,939 p=142762 u=bharathrajiva n=ansible | haProxy-5                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:42,939 p=142762 u=bharathrajiva n=ansible | haProxy-6                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:25:58,320 p=143381 u=bharathrajiva n=ansible | PLAY [Synchronous Start of Haproxy] *************************************************************************************************************************
+2023-11-23 13:25:58,383 p=143381 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:26:01,963 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:26:01,978 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:26:03,092 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:26:03,130 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:26:03,172 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:26:03,339 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:26:03,682 p=143381 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:26:05,413 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:26:05,725 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:26:05,759 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:26:05,822 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:26:05,997 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:26:06,056 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:26:06,129 p=143381 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Start)] ******************************************************************************************************************
+2023-11-23 13:26:06,223 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:31:37'
+2023-11-23 13:26:06,304 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:31:37'
+2023-11-23 13:26:06,397 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:31:38'
+2023-11-23 13:26:06,465 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:31:36'
+2023-11-23 13:26:06,546 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:31:36'
+2023-11-23 13:26:06,581 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:31:38'
+2023-11-23 13:26:06,647 p=143381 u=bharathrajiva n=ansible | TASK [Start HAProxy] ****************************************************************************************************************************************
+2023-11-23 13:26:09,125 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:26:09,807 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:26:09,940 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:26:09,982 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:26:10,165 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:26:10,409 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:26:10,479 p=143381 u=bharathrajiva n=ansible | TASK [Wait for HAProxy to Start] ****************************************************************************************************************************
+2023-11-23 13:26:13,705 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:26:14,305 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:26:14,362 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:26:14,524 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:26:14,526 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:26:14,705 p=143381 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:26:14,750 p=143381 u=bharathrajiva n=ansible | TASK [Display Current Time (After Start)] *******************************************************************************************************************
+2023-11-23 13:26:14,836 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:31:37'
+2023-11-23 13:26:14,973 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:31:37'
+2023-11-23 13:26:15,049 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:31:38'
+2023-11-23 13:26:15,115 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:31:36'
+2023-11-23 13:26:15,177 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:31:36'
+2023-11-23 13:26:15,200 p=143381 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:31:38'
+2023-11-23 13:26:15,889 p=143381 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:26:15,889 p=143381 u=bharathrajiva n=ansible | haProxy-1                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:26:15,889 p=143381 u=bharathrajiva n=ansible | haProxy-2                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:26:15,889 p=143381 u=bharathrajiva n=ansible | haProxy-3                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:26:15,889 p=143381 u=bharathrajiva n=ansible | haProxy-4                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:26:15,890 p=143381 u=bharathrajiva n=ansible | haProxy-5                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:26:15,891 p=143381 u=bharathrajiva n=ansible | haProxy-6                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:26:54,499 p=144225 u=bharathrajiva n=ansible | PLAY [Synchronous Start and Stop of Haproxy] ****************************************************************************************************************
+2023-11-23 13:26:54,554 p=144225 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:26:59,446 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:26:59,485 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:26:59,585 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:27:00,153 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:27:00,314 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:27:00,368 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:27:00,680 p=144225 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:27:02,422 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:27:02,496 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:27:02,552 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:27:02,553 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:27:02,846 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:27:03,362 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:27:03,413 p=144225 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Stop)] *******************************************************************************************************************
+2023-11-23 13:27:03,461 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:32:30'
+2023-11-23 13:27:03,501 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:32:29'
+2023-11-23 13:27:03,539 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:32:29'
+2023-11-23 13:27:03,581 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:32:30'
+2023-11-23 13:27:03,621 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:32:29'
+2023-11-23 13:27:03,643 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Stop): 2023-11-23 13:32:30'
+2023-11-23 13:27:03,700 p=144225 u=bharathrajiva n=ansible | TASK [Stop HAProxy] *****************************************************************************************************************************************
+2023-11-23 13:27:07,408 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:27:07,747 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:27:07,889 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:27:08,061 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:27:09,003 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:27:09,524 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:27:09,565 p=144225 u=bharathrajiva n=ansible | TASK [Display Current Time (After Stop)] ********************************************************************************************************************
+2023-11-23 13:27:09,612 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:32:30'
+2023-11-23 13:27:09,707 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:32:29'
+2023-11-23 13:27:09,794 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:32:29'
+2023-11-23 13:27:09,878 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:32:30'
+2023-11-23 13:27:09,950 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:32:29'
+2023-11-23 13:27:09,992 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Stop): 2023-11-23 13:32:30'
+2023-11-23 13:27:10,069 p=144225 u=bharathrajiva n=ansible | TASK [Wait for HAProxy to Stop] *****************************************************************************************************************************
+2023-11-23 13:27:15,025 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:27:15,107 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:27:15,348 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:27:15,529 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:27:15,967 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:27:15,968 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:27:16,001 p=144225 u=bharathrajiva n=ansible | TASK [Log errors] *******************************************************************************************************************************************
+2023-11-23 13:27:16,046 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 13:27:16,088 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 13:27:16,132 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 13:27:16,174 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 13:27:16,212 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 13:27:16,228 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 13:27:16,311 p=144225 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Start)] ******************************************************************************************************************
+2023-11-23 13:27:16,377 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:32:30'
+2023-11-23 13:27:16,424 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:32:29'
+2023-11-23 13:27:16,484 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:32:29'
+2023-11-23 13:27:16,567 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:32:30'
+2023-11-23 13:27:16,621 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:32:29'
+2023-11-23 13:27:16,661 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Start): 2023-11-23 13:32:30'
+2023-11-23 13:27:16,717 p=144225 u=bharathrajiva n=ansible | TASK [Start HAProxy] ****************************************************************************************************************************************
+2023-11-23 13:27:21,275 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:27:22,532 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:27:22,532 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:27:22,851 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:27:22,938 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:27:23,012 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:27:23,049 p=144225 u=bharathrajiva n=ansible | TASK [Wait for HAProxy to Start] ****************************************************************************************************************************
+2023-11-23 13:27:25,097 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:27:25,846 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:27:25,891 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:27:26,018 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:27:26,023 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:27:26,161 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:27:26,233 p=144225 u=bharathrajiva n=ansible | TASK [Display Current Time (After Start)] *******************************************************************************************************************
+2023-11-23 13:27:26,332 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:32:30'
+2023-11-23 13:27:26,416 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:32:29'
+2023-11-23 13:27:26,477 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:32:29'
+2023-11-23 13:27:26,517 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:32:30'
+2023-11-23 13:27:26,578 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:32:29'
+2023-11-23 13:27:26,610 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Start): 2023-11-23 13:32:30'
+2023-11-23 13:27:26,678 p=144225 u=bharathrajiva n=ansible | TASK [Check HAProxy Status] *********************************************************************************************************************************
+2023-11-23 13:27:28,720 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:27:28,748 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:27:28,886 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:27:28,897 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:27:29,453 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:27:29,673 p=144225 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:27:29,727 p=144225 u=bharathrajiva n=ansible | TASK [Display Current Time (After Check)] *******************************************************************************************************************
+2023-11-23 13:27:29,802 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Check): 2023-11-23 13:32:30'
+2023-11-23 13:27:29,887 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Check): 2023-11-23 13:32:29'
+2023-11-23 13:27:29,960 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Check): 2023-11-23 13:32:29'
+2023-11-23 13:27:30,044 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Check): 2023-11-23 13:32:30'
+2023-11-23 13:27:30,128 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Check): 2023-11-23 13:32:29'
+2023-11-23 13:27:30,162 p=144225 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Check): 2023-11-23 13:32:30'
+2023-11-23 13:27:30,221 p=144225 u=bharathrajiva n=ansible | TASK [Log errors for start process] *************************************************************************************************************************
+2023-11-23 13:27:30,327 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 13:27:30,389 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 13:27:30,450 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 13:27:30,524 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 13:27:30,614 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 13:27:30,641 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 13:27:30,689 p=144225 u=bharathrajiva n=ansible | TASK [Log errors for stop process] **************************************************************************************************************************
+2023-11-23 13:27:30,738 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 13:27:30,785 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 13:27:30,895 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 13:27:30,961 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 13:27:31,041 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 13:27:31,068 p=144225 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 13:27:31,799 p=144225 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:27:31,799 p=144225 u=bharathrajiva n=ansible | haProxy-1                  : ok=12   changed=6    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-11-23 13:27:31,799 p=144225 u=bharathrajiva n=ansible | haProxy-2                  : ok=12   changed=6    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-11-23 13:27:31,799 p=144225 u=bharathrajiva n=ansible | haProxy-3                  : ok=12   changed=6    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-11-23 13:27:31,799 p=144225 u=bharathrajiva n=ansible | haProxy-4                  : ok=12   changed=6    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-11-23 13:27:31,799 p=144225 u=bharathrajiva n=ansible | haProxy-5                  : ok=12   changed=6    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-11-23 13:27:31,800 p=144225 u=bharathrajiva n=ansible | haProxy-6                  : ok=12   changed=6    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2023-11-23 13:28:40,854 p=145782 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 13:28:40,907 p=145782 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:28:44,413 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:28:44,453 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:28:44,539 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:28:44,563 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:28:44,569 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:28:44,571 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:28:45,063 p=145782 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:28:47,031 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:28:47,071 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:28:47,075 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:28:47,094 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:28:47,196 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:28:47,349 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:28:47,425 p=145782 u=bharathrajiva n=ansible | TASK [debug] ************************************************************************************************************************************************
+2023-11-23 13:28:47,513 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg:
+  - haProxy-1
+2023-11-23 13:28:47,598 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg:
+  - haProxy-2
+2023-11-23 13:28:47,673 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg:
+  - haProxy-3
+2023-11-23 13:28:47,733 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg:
+  - haProxy-4
+2023-11-23 13:28:47,779 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg:
+  - haProxy-5
+2023-11-23 13:28:47,801 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg:
+  - haProxy-6
+2023-11-23 13:28:47,856 p=145782 u=bharathrajiva n=ansible | TASK [Set kernel parameters in sysctl.conf] *****************************************************************************************************************
+2023-11-23 13:28:50,317 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.core.netdev_max_backlog', 'value': '10000'})
+2023-11-23 13:28:50,318 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.core.netdev_max_backlog', 'value': '10000'})
+2023-11-23 13:28:50,321 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.core.netdev_max_backlog', 'value': '10000'})
+2023-11-23 13:28:50,325 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.core.netdev_max_backlog', 'value': '10000'})
+2023-11-23 13:28:50,566 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.core.netdev_max_backlog', 'value': '10000'})
+2023-11-23 13:28:50,612 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.core.netdev_max_backlog', 'value': '10000'})
+2023-11-23 13:28:51,561 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-3] => (item={'name': 'net.core.somaxconn', 'value': '70000'})
+2023-11-23 13:28:51,569 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-5] => (item={'name': 'net.core.somaxconn', 'value': '70000'})
+2023-11-23 13:28:51,619 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-6] => (item={'name': 'net.core.somaxconn', 'value': '70000'})
+2023-11-23 13:28:51,664 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-2] => (item={'name': 'net.core.somaxconn', 'value': '70000'})
+2023-11-23 13:28:51,779 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-4] => (item={'name': 'net.core.somaxconn', 'value': '70000'})
+2023-11-23 13:28:51,905 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-1] => (item={'name': 'net.core.somaxconn', 'value': '70000'})
+2023-11-23 13:28:52,649 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.ipv4.ip_local_port_range', 'value': '1024 65023'})
+2023-11-23 13:28:52,735 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.ipv4.ip_local_port_range', 'value': '1024 65023'})
+2023-11-23 13:28:52,785 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.ipv4.ip_local_port_range', 'value': '1024 65023'})
+2023-11-23 13:28:52,947 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.ipv4.ip_local_port_range', 'value': '1024 65023'})
+2023-11-23 13:28:52,950 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.ipv4.ip_local_port_range', 'value': '1024 65023'})
+2023-11-23 13:28:53,078 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.ipv4.ip_local_port_range', 'value': '1024 65023'})
+2023-11-23 13:28:53,710 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.ipv4.ip_nonlocal_bind', 'value': '1'})
+2023-11-23 13:28:54,016 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.ipv4.ip_nonlocal_bind', 'value': '1'})
+2023-11-23 13:28:54,128 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.ipv4.ip_nonlocal_bind', 'value': '1'})
+2023-11-23 13:28:54,193 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.ipv4.ip_nonlocal_bind', 'value': '1'})
+2023-11-23 13:28:54,225 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.ipv4.ip_nonlocal_bind', 'value': '1'})
+2023-11-23 13:28:54,664 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.ipv4.ip_nonlocal_bind', 'value': '1'})
+2023-11-23 13:28:55,247 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.ipv4.tcp_fin_timeout', 'value': '30'})
+2023-11-23 13:28:55,477 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.ipv4.tcp_fin_timeout', 'value': '30'})
+2023-11-23 13:28:55,666 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.ipv4.tcp_fin_timeout', 'value': '30'})
+2023-11-23 13:28:55,677 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.ipv4.tcp_fin_timeout', 'value': '30'})
+2023-11-23 13:28:55,756 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.ipv4.tcp_fin_timeout', 'value': '30'})
+2023-11-23 13:28:55,959 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.ipv4.tcp_fin_timeout', 'value': '30'})
+2023-11-23 13:28:56,442 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.ipv4.tcp_max_syn_backlog', 'value': '60000'})
+2023-11-23 13:28:56,746 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.ipv4.tcp_max_syn_backlog', 'value': '60000'})
+2023-11-23 13:28:56,946 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.ipv4.tcp_max_syn_backlog', 'value': '60000'})
+2023-11-23 13:28:56,960 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.ipv4.tcp_max_syn_backlog', 'value': '60000'})
+2023-11-23 13:28:57,220 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.ipv4.tcp_max_syn_backlog', 'value': '60000'})
+2023-11-23 13:28:57,355 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.ipv4.tcp_max_syn_backlog', 'value': '60000'})
+2023-11-23 13:28:57,774 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.ipv4.tcp_mem', 'value': '4096 87380 4194304'})
+2023-11-23 13:28:58,304 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.ipv4.tcp_mem', 'value': '4096 87380 4194304'})
+2023-11-23 13:28:58,628 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.ipv4.tcp_mem', 'value': '4096 87380 4194304'})
+2023-11-23 13:28:59,181 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.ipv4.tcp_mem', 'value': '4096 87380 4194304'})
+2023-11-23 13:28:59,486 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.ipv4.tcp_mem', 'value': '4096 87380 4194304'})
+2023-11-23 13:28:59,636 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.ipv4.tcp_mem', 'value': '4096 87380 4194304'})
+2023-11-23 13:29:00,080 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.ipv4.tcp_rmem', 'value': '4096 16060 4194304'})
+2023-11-23 13:29:00,094 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.ipv4.tcp_rmem', 'value': '4096 16060 4194304'})
+2023-11-23 13:29:00,683 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.ipv4.tcp_rmem', 'value': '4096 16060 4194304'})
+2023-11-23 13:29:00,798 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.ipv4.tcp_rmem', 'value': '4096 16060 4194304'})
+2023-11-23 13:29:00,851 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.ipv4.tcp_rmem', 'value': '4096 16060 4194304'})
+2023-11-23 13:29:01,502 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.ipv4.tcp_rmem', 'value': '4096 16060 4194304'})
+2023-11-23 13:29:01,504 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.ipv4.tcp_tw_reuse', 'value': '1'})
+2023-11-23 13:29:01,705 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.ipv4.tcp_tw_reuse', 'value': '1'})
+2023-11-23 13:29:02,475 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.ipv4.tcp_tw_reuse', 'value': '1'})
+2023-11-23 13:29:02,658 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'net.netfilter.nf_conntrack_max', 'value': '2000000'})
+2023-11-23 13:29:02,675 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.ipv4.tcp_tw_reuse', 'value': '1'})
+2023-11-23 13:29:02,685 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.ipv4.tcp_tw_reuse', 'value': '1'})
+2023-11-23 13:29:02,842 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'net.netfilter.nf_conntrack_max', 'value': '2000000'})
+2023-11-23 13:29:02,879 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.ipv4.tcp_tw_reuse', 'value': '1'})
+2023-11-23 13:29:03,657 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'net.netfilter.nf_conntrack_max', 'value': '2000000'})
+2023-11-23 13:29:03,816 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'fs.file-max', 'value': '3280079'})
+2023-11-23 13:29:03,901 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'net.netfilter.nf_conntrack_max', 'value': '2000000'})
+2023-11-23 13:29:03,903 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'net.netfilter.nf_conntrack_max', 'value': '2000000'})
+2023-11-23 13:29:04,007 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'fs.file-max', 'value': '3280079'})
+2023-11-23 13:29:04,127 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'net.netfilter.nf_conntrack_max', 'value': '2000000'})
+2023-11-23 13:29:04,776 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'fs.file-max', 'value': '3280079'})
+2023-11-23 13:29:04,874 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-5] => (item={'name': 'fs.nr_open', 'value': '11000440'})
+2023-11-23 13:29:05,021 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-3] => (item={'name': 'fs.nr_open', 'value': '11000440'})
+2023-11-23 13:29:05,028 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'fs.file-max', 'value': '3280079'})
+2023-11-23 13:29:05,030 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'fs.file-max', 'value': '3280079'})
+2023-11-23 13:29:05,248 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'fs.file-max', 'value': '3280079'})
+2023-11-23 13:29:05,871 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-6] => (item={'name': 'fs.nr_open', 'value': '11000440'})
+2023-11-23 13:29:06,123 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-2] => (item={'name': 'fs.nr_open', 'value': '11000440'})
+2023-11-23 13:29:06,124 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-1] => (item={'name': 'fs.nr_open', 'value': '11000440'})
+2023-11-23 13:29:06,350 p=145782 u=bharathrajiva n=ansible | ok: [haProxy-4] => (item={'name': 'fs.nr_open', 'value': '11000440'})
+2023-11-23 13:29:06,404 p=145782 u=bharathrajiva n=ansible | TASK [Apply sysctl settings] ********************************************************************************************************************************
+2023-11-23 13:29:07,602 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:29:07,605 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:29:07,634 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:29:07,735 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:29:07,809 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:29:07,907 p=145782 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:29:08,643 p=145782 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:29:08,644 p=145782 u=bharathrajiva n=ansible | haProxy-1                  : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:29:08,644 p=145782 u=bharathrajiva n=ansible | haProxy-2                  : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:29:08,644 p=145782 u=bharathrajiva n=ansible | haProxy-3                  : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:29:08,644 p=145782 u=bharathrajiva n=ansible | haProxy-4                  : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:29:08,644 p=145782 u=bharathrajiva n=ansible | haProxy-5                  : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:29:08,644 p=145782 u=bharathrajiva n=ansible | haProxy-6                  : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:31:44,145 p=147896 u=bharathrajiva n=ansible | PLAY [haproxy] **********************************************************************************************************************************************
+2023-11-23 13:31:44,182 p=147896 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:31:48,695 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:31:48,937 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:31:49,119 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:31:49,240 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:31:49,464 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:31:50,592 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:31:50,935 p=147896 u=bharathrajiva n=ansible | TASK [Copy HAProxy configuration file] **********************************************************************************************************************
+2023-11-23 13:31:55,221 p=147896 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:31:55,868 p=147896 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:31:56,215 p=147896 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:31:56,418 p=147896 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:31:56,479 p=147896 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:31:57,232 p=147896 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:31:57,260 p=147896 u=bharathrajiva n=ansible | TASK [Add newline to the end of the file] *******************************************************************************************************************
+2023-11-23 13:31:59,880 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:31:59,881 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:32:00,730 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:32:00,831 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:32:00,855 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:32:00,975 p=147896 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:32:01,048 p=147896 u=bharathrajiva n=ansible | TASK [Log errors] *******************************************************************************************************************************************
+2023-11-23 13:32:01,128 p=147896 u=bharathrajiva n=ansible | skipping: [haProxy-1]
+2023-11-23 13:32:01,258 p=147896 u=bharathrajiva n=ansible | skipping: [haProxy-2]
+2023-11-23 13:32:01,310 p=147896 u=bharathrajiva n=ansible | skipping: [haProxy-3]
+2023-11-23 13:32:01,362 p=147896 u=bharathrajiva n=ansible | skipping: [haProxy-4]
+2023-11-23 13:32:01,433 p=147896 u=bharathrajiva n=ansible | skipping: [haProxy-5]
+2023-11-23 13:32:01,458 p=147896 u=bharathrajiva n=ansible | skipping: [haProxy-6]
+2023-11-23 13:32:02,185 p=147896 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:32:02,186 p=147896 u=bharathrajiva n=ansible | haProxy-1                  : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:32:02,186 p=147896 u=bharathrajiva n=ansible | haProxy-2                  : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:32:02,186 p=147896 u=bharathrajiva n=ansible | haProxy-3                  : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:32:02,186 p=147896 u=bharathrajiva n=ansible | haProxy-4                  : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:32:02,187 p=147896 u=bharathrajiva n=ansible | haProxy-5                  : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:32:02,187 p=147896 u=bharathrajiva n=ansible | haProxy-6                  : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-11-23 13:32:39,617 p=148692 u=bharathrajiva n=ansible | PLAY [Synchronous Relod of Haproxy] *************************************************************************************************************************
+2023-11-23 13:32:39,672 p=148692 u=bharathrajiva n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-11-23 13:32:42,632 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-4]
+2023-11-23 13:32:42,990 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-6]
+2023-11-23 13:32:43,056 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-1]
+2023-11-23 13:32:43,151 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-5]
+2023-11-23 13:32:43,260 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-3]
+2023-11-23 13:32:43,423 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-2]
+2023-11-23 13:32:43,745 p=148692 u=bharathrajiva n=ansible | TASK [Initial check] ****************************************************************************************************************************************
+2023-11-23 13:32:45,364 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:32:46,646 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:32:46,647 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:32:46,932 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:32:47,455 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:32:47,456 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:32:47,502 p=148692 u=bharathrajiva n=ansible | TASK [Display Current Time (Before Relod)] ******************************************************************************************************************
+2023-11-23 13:32:47,554 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:47,586 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:47,635 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:47,707 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:47,849 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:47,885 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (Before Relod): 2023-11-23 13:37:46'
+2023-11-23 13:32:47,949 p=148692 u=bharathrajiva n=ansible | TASK [Relod HAProxy] ****************************************************************************************************************************************
+2023-11-23 13:32:50,582 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-4]
+2023-11-23 13:32:50,925 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-1]
+2023-11-23 13:32:50,979 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-6]
+2023-11-23 13:32:51,423 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-5]
+2023-11-23 13:32:51,533 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-2]
+2023-11-23 13:32:51,784 p=148692 u=bharathrajiva n=ansible | changed: [haProxy-3]
+2023-11-23 13:32:51,843 p=148692 u=bharathrajiva n=ansible | TASK [Display Current Time (After Relod)] *******************************************************************************************************************
+2023-11-23 13:32:51,958 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-1] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:51,997 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-2] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:52,038 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-3] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:52,095 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-4] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:52,175 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-5] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:37:47'
+2023-11-23 13:32:52,207 p=148692 u=bharathrajiva n=ansible | ok: [haProxy-6] => 
+  msg: 'Current Time (After Relod): 2023-11-23 13:37:46'
+2023-11-23 13:32:52,872 p=148692 u=bharathrajiva n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-11-23 13:32:52,872 p=148692 u=bharathrajiva n=ansible | haProxy-1                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:32:52,872 p=148692 u=bharathrajiva n=ansible | haProxy-2                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:32:52,872 p=148692 u=bharathrajiva n=ansible | haProxy-3                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:32:52,872 p=148692 u=bharathrajiva n=ansible | haProxy-4                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:32:52,872 p=148692 u=bharathrajiva n=ansible | haProxy-5                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-11-23 13:32:52,872 p=148692 u=bharathrajiva n=ansible | haProxy-6                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

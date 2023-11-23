@@ -1,0 +1,46 @@
+---
+- name: Synchronous Stop of Haproxy
+  hosts: haproxy
+  become: yes
+  become_user: root
+  vars:
+    time: "{{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+  vars_files:
+    - "environment/hap_tuning_variables.yml"
+    - "vault.yml"
+  tasks:
+    - name: Initial check
+      shell: 
+         "hostname"
+      register: hostname
+
+    - name: Display Current Time (Before Stop)
+      debug:
+        msg: "Current Time (Before Stop): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+    - name: Stop HAProxy
+      become: true
+      systemd:
+        name: haproxy
+        state: stopped
+      async: 100
+      poll: 0
+      register: stop_result
+
+    - name: Display Current Time (After Stop)
+      debug:
+        msg: "Current Time (After Stop): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+    # - name: Wait for HAProxy to Stop
+    #   async_status:
+    #     jid: "{{ stop_result.ansible_job_id }}"
+    #   register: stop_result
+    #   until: stop_result.finished
+    #   retries: 10
+    #   delay: 10
+
+    # - name: Log errors for stop process 
+    #   lineinfile:
+    #     path: log/error.log
+    #     line: "{{ stop_result }}"
+    #   when: stop_result.failed

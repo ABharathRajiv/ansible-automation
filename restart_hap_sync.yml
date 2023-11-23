@@ -1,0 +1,96 @@
+---
+- name: Synchronous Start and Stop of Haproxy
+  hosts: haproxy
+  become: yes
+  become_user: root
+  vars:
+    time: "{{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+  vars_files:
+    - "environment/hap_tuning_variables.yml"
+    - "vault.yml"
+  tasks:
+    - name: Initial check
+      shell: 
+         "hostname"
+      register: hostname
+
+    - name: Display Current Time (Before Stop)
+      debug:
+        msg: "Current Time (Before Stop): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+    - name: Stop HAProxy
+      become: true
+      systemd:
+        name: haproxy
+        state: stopped
+      async: 100
+      poll: 0
+      register: stop_result
+
+    - name: Display Current Time (After Stop)
+      debug:
+        msg: "Current Time (After Stop): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+    - name: Wait for HAProxy to Stop
+      async_status:
+        jid: "{{ stop_result.ansible_job_id }}"
+      register: stop_result
+      until: stop_result.finished
+      retries: 60
+      delay: 10
+    
+    - name: Log errors
+      lineinfile:
+        path: log/error.log
+        line: "{{ result.stderr }}"
+      when: stop_result.failed
+
+    - name: Display Current Time (Before Start)
+      debug:
+        msg: "Current Time (Before Start): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+    - name: Start HAProxy
+      become: true
+      systemd:
+        name: haproxy
+        state: started
+      async: 100
+      poll: 0
+      register: start_result
+
+    
+    - name: Wait for HAProxy to Start
+      async_status:
+        jid: "{{ start_result.ansible_job_id }}"
+      register: start_result
+      until: start_result.finished
+      retries: 60
+      delay: 10
+
+    - name: Display Current Time (After Start)
+      debug:
+        msg: "Current Time (After Start): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+
+    - name: Check HAProxy Status
+      shell: systemctl is-active haproxy
+      register: haproxy_status
+      until: haproxy_status.stdout == "active"
+      retries: 60
+      delay: 10
+
+    - name: Display Current Time (After Check)
+      debug:
+        msg: "Current Time (After Check): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+    - name: Log errors for start process
+      lineinfile:
+        path: log/error.log
+        line: "{{ start_result }}"
+      when: start_result.failed
+    
+    - name: Log errors for stop process
+      lineinfile:
+        path: log/error.log
+        line: "{{ stop_result}}"
+      when: stop_result.failed

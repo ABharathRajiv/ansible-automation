@@ -1,0 +1,58 @@
+---
+- name: Synchronous Start of Haproxy
+  hosts: haproxy
+  become: yes
+  become_user: root
+  vars:
+    time: "{{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+  vars_files:
+    - "environment/hap_tuning_variables.yml"
+    - "vault.yml"
+  tasks:
+    - name: Initial check
+      shell: 
+         "hostname"
+      register: hostname
+
+    - name: Display Current Time (Before Start)
+      debug:
+        msg: "Current Time (Before Start): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+    - name: Start HAProxy
+      become: true
+      systemd:
+        name: haproxy
+        state: started
+      async: 100
+      poll: 0
+      register: start_result
+
+    - name: Wait for HAProxy to Start
+      async_status:
+        jid: "{{ start_result.ansible_job_id }}"
+      register: start_result
+      until: start_result.finished
+      retries: 10
+      delay: 10
+      
+    - name: Display Current Time (After Start)
+      debug:
+        msg: "Current Time (After Start): {{ ansible_date_time.date }} {{ ansible_date_time.time }}"
+
+
+    # - name: Ensure log directory exists
+    #   file:
+    #     path: log
+    #     state: directory
+
+    # - name: Ensure error.log file exists
+    #   file:
+    #     path: log/error.log
+    #     state: touch
+
+    # - name: Log errors for start process
+    #   lineinfile:
+    #     path: log/error.log
+    #     line: "{{ start_result }}"
+    #   when: start_result.failed
+    

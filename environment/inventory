@@ -1,0 +1,7 @@
+[haproxy]
+haProxy-1 ansible_ssh_host=13.200.25.165 ansible_ssh_user=ubuntu ansible_ssh_pass="{{ ansible_ssh_pass1 }}" ansible_sudo_pass="{{ ansible_sudo_pass1 }}"
+haProxy-2 ansible_ssh_host=3.108.143.98 ansible_ssh_user=ubuntu ansible_ssh_pass="{{ ansible_ssh_pass1 }}" ansible_sudo_pass="{{ ansible_sudo_pass1 }}"
+haProxy-3 ansible_ssh_host=13.127.83.204 ansible_ssh_user=ubuntu ansible_ssh_pass="{{ ansible_ssh_pass1 }}" ansible_sudo_pass="{{ ansible_sudo_pass1 }}"
+haProxy-4 ansible_ssh_host=3.110.143.238 ansible_ssh_user=ubuntu ansible_ssh_pass="{{ ansible_ssh_pass1 }}" ansible_sudo_pass="{{ ansible_sudo_pass1 }}"
+haProxy-5 ansible_ssh_host=13.234.32.93 ansible_ssh_user=ubuntu ansible_ssh_pass="{{ ansible_ssh_pass1 }}" ansible_sudo_pass="{{ ansible_sudo_pass1 }}"
+haProxy-6 ansible_ssh_host=13.127.58.166 ansible_ssh_user=ubuntu ansible_ssh_pass="{{ master_ssh_pass}}" ansible_sudo_pass="{{ master_sudo_pass }}"

@@ -1,0 +1,33 @@
+- hosts: haproxy
+  become: yes
+  become_user: root
+  vars_files:
+    - "environment/hap_tuning_variables.yml"
+    - "vault.yml"
+  tasks:
+    - name: Initial check
+      shell: "hostname"
+      register: hostname
+
+    - debug:
+        msg: "{{ hostname.stdout_lines }}"
+
+    - name: Set kernel parameters in sysctl.conf
+      sysctl:
+        name: "{{ item.name }}"
+        value: "{{ item.value }}"
+        sysctl_file: /etc/sysctl.conf
+        state: present
+      register: result
+      loop: "{{ tuning_parameters }}"
+
+    - name: Apply sysctl settings
+      command: sysctl -p
+  
+
+    # - name: Log errors
+      # lineinfile:
+      #   path: log/error.log
+      #   line: "{{ result.stderr }}"
+      # when: result.failed
+      

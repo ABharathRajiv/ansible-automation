@@ -1,0 +1,74 @@
+# /etc/haproxy/haproxy.cfg
+
+# Global settings
+global
+    nbthread           {{ haproxy_global.nbthread }}
+{% for cpu_map in haproxy_global.cpu_maps %}
+    cpu-map            {{ cpu_map.thread }} {{ cpu_map.cpu }}
+{% endfor %}
+    stats socket /run/haproxy-master.sock mode 777 level admin expose-fd listeners
+    maxconn            {{ haproxy_global.maxconn }}
+
+defaults
+    mode               tcp
+    log                global
+    option             httplog
+    option             dontlognull
+    option             forwardfor except 127.0.0.0/8
+    option             redispatch
+    retries            3
+    timeout connect    10s
+    timeout client     300s
+    timeout server     300s
+
+#frontend fe_web
+#    bind *:443 #ssl crt /etc/haproxy/cert.pem
+#    mode http
+#    default_backend be_web
+#    acl rest_tag path_beg /api
+#    use_backend be_rest if rest_tag
+#    default_backend be_web
+
+{% for frontend in haproxy_frontends %}
+frontend {{ frontend.name }}
+    bind {{ frontend.bind }}
+    mode {{ frontend.mode }}
+    default_backend {{ frontend.default_backend }}
+    maxconn {{ frontend.maxconn }}
+{% endfor %}
+    stats enable
+    stats uri /stats
+    stats refresh 10s
+    stats admin if LOCALHOST
+
+{% for frontend in haproxy_frontend_stats %}
+frontend {{ frontend.name }}
+    bind {{ frontend.bind }}
+    mode {{ frontend.mode }}
+
+{% endfor %}
+
+backend be_stats
+    stats uri /hapee-stats
+
+backend be_web_rest
+    mode tcp
+    balance roundrobin
+    option forwardfor
+    server apisix1 10.215.9.72:9443 check
+    server apisix2 10.215.9.76:9443 check
+    server apisix3 10.215.9.80:9443 check
+
+backend be_mqtt
+    balance            leastconn
+
+{% for server in server_list %}
+    server {{ server.name }} {{ server.address }} check port {{ server.port }} inter {{ server.interval }} fall {{ server.fall }} rise {{ server.rise }}
+{% endfor %}
+
+{% for backend in haproxy_backend %}
+backend {{ backend.name }}
+    mode {{ backend.mode }}
+    balance {{ backend.balance }}
+    server {{ backend.server }}
+{% endfor %}
